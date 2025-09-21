@@ -181,18 +181,130 @@
         </section>
 
         <!-- the glob part -->
-        <section id="" class="text-center">
+        <section id="discovery-section" class="text-center">
             <div class="container">
-                <div class="globpart ">
+                <div class="globpart">
                     <h1>Lands of</h1>
                     <h2>Discovery</h2>
                     <p>A world away from the day-to-day. Your escape. Your world. Explore the map below and take a
                         journey to our communities.</p>
+                    <br><img
+                        src="https://img.freepik.com/free-psd/earth-ball-planet-isolated_23-2151806117.jpg?t=st=1758363196~exp=1758366796~hmac=c347eab776331359c2098e5d14c394b6e28ca8d12ee2663579385016b0995e7c&w=1480"
+                        alt="Earth planet illustration" class="glob" width="80%" height="100%" style="left: 10%;">
+                </div>
+
+                <div class="globContent">
+                    <div class="arrow">
+                        <i class="bi bi-arrow-left"></i>
+
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                    <div class="weather">
+                        <span><i class="bi bi-sun"> <span><br>53 °F</span></i></span>
+                        <span><i class="bi bi-wind"><span><br>2 mph
+                                </span></i></span>
+                        <span><i class="bi bi-compass"><span><br>108°
+                                </span></i></span>
+                    </div>
+                    <div class="place">
+                        <p>Flathead Lake, Montana</p>
+                        <h3>Territory 1889 Golf & Lake Club</h3>
+                    </div>
+                    <div class="location">
+                        <i class="bi bi-geo-alt"> 47.90667629161947° N / -114.1315530874691° W</i>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- picture section -->
+        <section id="picturesection" class="">
+            <div class="pgotcont">
+                <div class="photo">
+
+
+                    <img src="https://www.datocms-assets.com/128889/1714635997-amazing-pool-2.jpg?auto=format&fit=max&h=3000&w=2000"
+                        alt="">
+                    <div class="photoContent">
+                        <h1>Experiences</h1>
+                        <button>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="photo"><img
+                        src="https://www.datocms-assets.com/128889/1714636009-lifestyle_slider.jpg?auto=format&fit=max&h=3000&w=2000"
+                        alt="">
+                    <div class="photoContent">
+
+                        <h1>LifeStyle</h1>
+
+                        <button>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="photo"><img
+                        src="https://www.datocms-assets.com/128889/1714636031-screen-shot-2023-08-29-at-12-29-27-pm-copy.jpg?auto=format&fit=max&h=3000&w=2000"
+                        alt="">
+                    <div class="photoContent">
+                        <h1>Wellness</h1>
+                        <button>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- <section id="" class="text-center">
+            <div class="container">
+
+            </div>
+        </section> -->
+
+
+        <!--footer part  -->
+        <footer class="footercon" id="footer">
+            <div class="footercontainer">
+                <div class="">
+                    <a class="" href="#">
+                        <img src="https://discoverylandco.com/logo-mark.svg" width="50vh" height="100vh" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h5>Get in touch</h5>
+                    <h3>(480) 624-5200</h3>
+                    <h5>info@discoverylandco.com</h5>
+                    <br>
+                    <h5>Real estate</h5>
+                    <h5>realestate@discoverylandco.com</h5>
+                </div>
+                <div class="footer-section">
+                    <h5>About</h5>
+                    <h5>Our World</h5>
+                    <h5>Real estate</h5>
+                    <h5>Experiences</h5>
+                    <h5>Gallery</h5>
+                </div>
+                <div class="footer-section">
+                    <h5>Foundation</h5>
+                    <h5>Career</h5>
+                    <h5>Company</h5>
+                    <h5>Contact</h5>
+                    <h5>Privacy</h5>
+                </div>
+            </div>
+            <div class="base">
+                <h5>© Discovery Land Company. All rights reserved.</h5>
+                <h5>Site by Outpost</h5>
+            </div>
+        </footer>
 
     </div>
 
@@ -205,12 +317,18 @@
 
             if (currentScroll > lastScroll) {
                 navbar.style.top = '-100px';
-            } else {
+                navbar.style.backgroundColor = "trasparent";
+
+            }
+            else {
                 navbar.style.top = '0';
+                navbar.style.backgroundColor = "trasparent";
+
             }
 
             lastScroll = currentScroll;
         });
+
     </script>
 </body>
 
