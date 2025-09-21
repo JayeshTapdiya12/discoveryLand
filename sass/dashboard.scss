@@ -115,10 +115,10 @@ body {
 }
 .fisrt img {
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 .seconf img {
-  width: 50%;
+  width: 70%;
   height: 100%;
 }
 
@@ -176,4 +176,151 @@ body {
 }
 .globpart p {
   color: rgb(181, 179, 179);
+}
+
+.glob {
+  overflow: auto;
+  left: 100%;
+}
+
+.globContent {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 50vh;
+  width: 60vw;
+  margin-top: 50vh;
+
+  justify-content: space-evenly;
+}
+
+.arrow,
+.location,
+.place,
+.weather {
+  margin-left: 5vh;
+  color: white;
+  text-align: left;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+// photo frmae
+
+//
+
+.pgotcont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.photo {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.photo:hover img:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.photoContent i {
+  position: absolute;
+  bottom: -4vh;
+  right: 10vh;
+
+  width: 7vh;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 2vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.photoContent i:hover {
+  background-color: white;
+  color: black;
+}
+
+.photoContent {
+  position: absolute;
+
+  top: 350px;
+  left: 100px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.photoContent button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+}
+
+// fotter
+.footercon {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h5 {
+  margin: 10px 0;
+}
+
+.base {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footercontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-bottom: 30px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
 }
