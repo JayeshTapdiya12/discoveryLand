@@ -1,0 +1,256 @@
+:root {
+  --display: flex;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.main_container {
+  display: var(--display);
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease, top 0.3s ease;
+  z-index: 10;
+  background-color: transparent;
+}
+.header.scrolled {
+  background-color: white;
+  color: black;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 7vh;
+}
+.header ul li a {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#headerContent h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  z-index: 1;
+  font-style: italic;
+}
+
+#headerContent2 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  left: 5vh;
+}
+
+#headerContent3 i {
+  position: absolute;
+  bottom: 20px;
+  background-color: white;
+  border-radius: 10vh;
+  text-align: center;
+  width: 5vh;
+  height: 4vh;
+  right: 5vh;
+}
+
+/* line container */
+.linecont {
+  margin: 5vh;
+  padding: 10vh;
+}
+
+/* welcome section */
+#welcome {
+  background-color: white;
+  text-align: center;
+}
+#welcome .container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+}
+#welcome .fisrt {
+  padding-top: 10%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+#welcome .seconf img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* image + text section */
+.helloimg {
+  position: relative;
+  display: flex;
+  margin-top: 10%;
+  width: 100%;
+}
+.helloimg .imagetext {
+  width: 70%;
+}
+.helloimg .imagetext img {
+  width: 100%;
+  left: 0;
+  display: block;
+}
+.helloimg .textimage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(120%);
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.helloimg .textimage h1 {
+  margin-bottom: 20px;
+}
+.helloimg .textimage p {
+  margin-bottom: 20px;
+}
+.helloimg .textimage button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.helloimg .textimage button:hover {
+  background: #333;
+}
+
+.helloimgright {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+  width: 100%;
+}
+.helloimgright .imagetextright {
+  width: 70%;
+}
+.helloimgright .imagetextright img {
+  width: 100%;
+  right: 0;
+}
+.helloimgright .textimageright {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-140%);
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.helloimgright .textimageright h1 {
+  margin-bottom: 20px;
+}
+.helloimgright .textimageright p {
+  margin-bottom: 20px;
+}
+.helloimgright .textimageright button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.helloimgright .textimageright button:hover {
+  background: #333;
+}
+
+.footercon {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h5 {
+  margin: 10px 0;
+}
+
+.base {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footercontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo img {
+    margin-bottom: 30px;
+  }
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=experince.css.map */
