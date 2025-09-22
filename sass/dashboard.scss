@@ -68,15 +68,16 @@ body {
   z-index: -1;
 }
 
-#headerContent {
+#headerContent h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2em;
+  font-size: 6rem;
   text-align: center;
   z-index: 1;
+  font-style: italic;
 }
 
 #headerContent2 {
@@ -86,13 +87,14 @@ body {
   left: 5vh;
 }
 
-#headerContent3 {
+#headerContent3 i {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   background-color: white;
   border-radius: 10vh;
   text-align: center;
   width: 5vh;
+  height: 4vh;
   right: 5vh;
 }
 
@@ -106,9 +108,12 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  gap: 5%;
+  align-items: center;
 }
 .fisrt {
-  width: 50%;
+  padding-top: 10%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   text-align: justify;
